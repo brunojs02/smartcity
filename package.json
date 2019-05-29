@@ -30,6 +30,7 @@
     "react-test-renderer": "16.8.3"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": ["node_modules/(?!react-native|react-navigation)"]
   }
 }
