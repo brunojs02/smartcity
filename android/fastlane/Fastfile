@@ -3,21 +3,21 @@ default_platform(:android)
 platform :android do
   desc "Runs all the tests"
   lane :test do
-    sh "cd ../ && yarn lint"
-    sh "cd ../ && yarn test"
+    sh "cd ../.. && yarn lint"
+    sh "cd ../.. && yarn test"
     gradle(task: "test")
   end
 
   desc "Bundle assets"
   lane :bundle do
-    sh "cd ../ && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
+    sh "cd ../.. && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
   end
 
   desc "Submit a new Beta Build to Crashlytics Beta"
   lane :beta do
     gradle(task: "clean assembleRelease")
     crashlytics
-  
+
     # sh "your_script.sh"
     # You can also use other beta testing services here
   end
