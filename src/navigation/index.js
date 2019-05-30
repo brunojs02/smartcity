@@ -1,4 +1,5 @@
 import React from 'react';
+import { Platform } from 'react-native';
 import { createAppContainer, createBottomTabNavigator } from 'react-navigation';
 import { HomeScreen, SettingsScreen } from '~/screens';
 import { Icon } from '~/components/common';
@@ -28,6 +29,9 @@ const bottomNav = createBottomTabNavigator({
   tabBarOptions: {
     activeTintColor: 'darkgray',
     inactiveTintColor: 'gray',
+    labelStyle: {
+      fontFamily: Platform.OS === 'ios' ? 'SFNS Display' : 'Roboto',
+    },
   },
 });
 

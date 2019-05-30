@@ -7,6 +7,9 @@
     "lint": "eslint *.js **/*.js",
     "test": "jest"
   },
+  "rnpm":{
+    "assets":["./src/assets/fonts/"]
+  },
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "16.8.3",

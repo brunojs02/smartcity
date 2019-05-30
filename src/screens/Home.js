@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Text } from 'react-native';
-import { Container } from '~/components/common';
+import { Container, Text } from '~/components/common';
 
 class HomeScreen extends PureComponent {
   render() {

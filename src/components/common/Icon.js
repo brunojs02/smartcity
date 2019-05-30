@@ -1,6 +1,6 @@
 import React from 'react';
-import { Platform } from 'react-native';
 import PropTypes from 'prop-types';
+import { Platform } from 'react-native';
 import { default as Ionicons } from 'react-native-vector-icons/Ionicons';
 
 const propTypes = {
@@ -14,12 +14,14 @@ const defaultProps = {
 
 const os = Platform.OS === 'ios' ? 'ios' : 'md';
 
-const Icon = ({ name, size }) => (
-  <Ionicons
-    name={`${os}-${name}`}
-    size={size}
-  />
-);
+function Icon({ name, size }) {
+  return (
+    <Ionicons
+      name={`${os}-${name}`}
+      size={size}
+    />
+  );
+}
 
 Icon.propTypes = propTypes;
 Icon.defaultProps = defaultProps;

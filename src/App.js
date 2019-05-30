@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '~/navigation';
-import { StatusBar } from '~/components';
+import { StatusBar } from '~/components/common';
 
 function App() {
   return (

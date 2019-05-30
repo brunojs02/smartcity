@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Text } from 'react-native';
-import { Container } from '~/components';
+import { Container, Text } from '~/components/common';
 
 class SettingsScreen extends PureComponent {
   render() {
