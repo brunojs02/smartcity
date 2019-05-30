@@ -27,4 +27,4 @@ function Container({ children }) {
 
 Container.propTypes = propTypes;
 
-export { Container };
+export default Container;

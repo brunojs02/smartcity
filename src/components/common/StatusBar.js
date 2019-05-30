@@ -10,4 +10,4 @@ function StatusBar() {
   );
 }
 
-export { StatusBar };
+export default StatusBar;

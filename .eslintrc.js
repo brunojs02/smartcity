@@ -12,5 +12,13 @@ module.exports = {
   },
   'globals': {
     "fetch": false
+  },
+  'settings': {
+    'import/resolver': {
+      'babel-plugin-root-import': {
+        rootPathPrefix: '~',
+        rootPathSuffix: 'src',
+      },
+    }
   }
 }

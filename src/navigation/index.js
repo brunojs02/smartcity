@@ -1,8 +1,7 @@
 import React from 'react';
 import { createAppContainer, createBottomTabNavigator } from 'react-navigation';
-import HomeScreen from '../screens/Home';
-import { Icon } from '../components';
-import SettingsScreen from '../screens/Settings';
+import { HomeScreen, SettingsScreen } from '~/screens';
+import { Icon } from '~/components/common';
 
 const bottomNav = createBottomTabNavigator({
   Home: HomeScreen,
