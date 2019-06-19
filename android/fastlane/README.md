@@ -26,16 +26,11 @@ Runs all the tests
 fastlane android bundle
 ```
 Bundle assets
-### android beta
+### android icons
 ```
-fastlane android beta
+fastlane android icons
 ```
-Submit a new Beta Build to Crashlytics Beta
-### android deploy
-```
-fastlane android deploy
-```
-Deploy a new version to the Google Play
+Generate icons
 
 ----
 
